@@ -1,10 +1,10 @@
 # ![alt text](docs/logo.png "Title") Estudio Cactus Frontend Developer Test
 
-This is the test for the candidates to our Front-end Developr job position at Estudio Cactus.
+This is the test for the candidates to our Front-end Developer job position at Estudio Cactus.
 
 ## Scenario
 
-One of our best architect customers needs to build a landing page to show his professional profile to the world. On the first meeting with him he gave us some key aspects like:
+One of our best architect ***Alessio Muganni*** needs to build a landing page to show his professional profile to the world. On the first meeting with him he gave us some key aspects like:
 
 - Modern look and feel.
 - Smooth animtations and transitions.
@@ -14,6 +14,8 @@ One of our best architect customers needs to build a landing page to show his pr
 
 After that, the team designed a low-fidelity prototype just to validate the structure with client, and this was approved. [Link here](docs/low-fidelity.pdf).
 
+
+
 ## Technological Stack
 
 - Next.js
@@ -21,6 +23,8 @@ After that, the team designed a low-fidelity prototype just to validate the stru
 - Standard.js
 - Formik
 - Figma
+
+
 
 ## Todo
 
@@ -37,13 +41,28 @@ Based on this low-fidelity mockups you should:
 
 
 
-### Extra
+### Extra Client Request
 
-Create a blog section with your own design. Here we provide a fake API for 100 post: https://jsonplaceholder.typicode.com/posts
+The client has heard that Blogs are super important for SEO and websites, and now, he wants to create a create a blog section. He said that the design is up to us. So let's do something simple.
 
-Take account of every post SEO.
+The only requirement should be that blog looks like:
 
-> **TIP**: Pagination is the key
+1. Master section where the user could see all blog post (just post tile and thumbnail image)
+2. Detail post section that displays the detail of post (post title, post body and image)
+
+
+
+**API endpoints:**
+
+[Posts](https://jsonplaceholder.typicode.com/posts)
+
+[Post images](https://jsonplaceholder.typicode.com/photos)
+
+> **TIP**: Use the key *id* to make the relationship between the endpoints
+
+
+
+Take account of every post SEO and pagination.
 
 
 
@@ -60,11 +79,15 @@ Take account of every post SEO.
 - Responsiveness.
 - Form validation fields with formik.
 
+
+
 ## Bonus Points
 
 - Test components with Jest.
 - Assets optimization.
 - Basic SEO
+
+
 
 ## Getting Started
 
