@@ -1,29 +1,86 @@
-# Next.js + Tailwind CSS Example
+# Estudio Cactus Frontend Developer Test
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is the test for the candidates to our Front-end Developr job position at Estudio Cactus.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+## Scenario
 
-## Preview
+One of our best architect customers needs to build a landing page to show his professional profile to the world. On the first meeting with him he gave us some key aspects like:
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+- Modern look and feel.
+- Smooth animtations and transitions.
+- Most of his clients come from mobile.
+- Clean design.
+- Inspirantion websites: https://www.volvocars.com, https://drowart.com
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+After that, the team designed a low-fidelity prototype just to validate the structure with client, and this was approved. [Link here](docs/low-fidelity.pdf).
 
-## Deploy your own
+## Technological Stack
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+- Next.js
+- Talwindcss
+- Standard.js
+- Formik
+- Figma
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Todo
 
-## How to use
+Based on this low-fidelity mockups you should:
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+- Convert this low-fidelity prototype to a final design in Figma (based on the client suggestions).
+- Clone this starter project, create a new repo with your project and make a first commit to check the starting date.
+- Make indivudal commits every block you develop to check the advance.
+- Contact should only validate the fields with Formik.
+- Share with us your repo and Figma prototype.
+- Deploy to Vercel your project.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+*On the assets folder you will find all the required images and texts.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+
+### Extra
+
+Create a blog section with your own design. Here we provide a fake API for 100 post: https://jsonplaceholder.typicode.com/posts
+
+Take account of post SEO.
+
+> **TIP**: Pagination is the key
+
+
+
+## What do we value?
+
+- Quality of Figma prototype.
+- React.js component design.
+- Tailwind configuration.
+- GIT usage.
+- Web Performance Optimization.
+- Library choosen to animations/transitions.
+- Organization and code clarity.
+- Browser compatibility.
+- Responsiveness.
+- Form validation fields with formik.
+
+## Bonus Points
+
+- Test components with Jest.
+- Assets optimization.
+- Basic SEO
+
+## Getting Started
+
+Install Standard.js linter extension for VSCode: https://marketplace.visualstudio.com/items?itemName=standard.vscode-standard
+
+The project is developed with [Next.js](https://nextjs.org/docs/getting-started) and [Tailwindcss](https://tailwindcss.com/docs). 
+
+To start the development server:
+
+`yarn install`
+
+and then
+
+`yarn dev`
+
+After that open your project at http://localhost:3000 in your browser.
+
+
+
