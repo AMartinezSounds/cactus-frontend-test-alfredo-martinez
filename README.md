@@ -1,10 +1,10 @@
 # ![alt text](docs/logo.png "Title") Estudio Cactus Frontend Developer Test
 
-This is the test for the candidates to our Front-end Developr job position at Estudio Cactus.
+This is the test for the candidates to our Front-end Developer job position at Estudio Cactus.
 
 ## Scenario
 
-One of our best architect customers needs to build a landing page to show his professional profile to the world. On the first meeting with him he gave us some key aspects like:
+One of our best architect customer (Alessio Muganni) needs to build a landing page to show his professional profile to the world. On the first meeting with him he gave us some key aspects like:
 
 - Modern look and feel.
 - Smooth animtations and transitions.
