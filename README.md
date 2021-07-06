@@ -1,4 +1,4 @@
-# Estudio Cactus Frontend Developer Test
+# ![alt text](docs/logo.png "Title") Estudio Cactus Frontend Developer Test
 
 This is the test for the candidates to our Front-end Developr job position at Estudio Cactus.
 
@@ -41,7 +41,7 @@ Based on this low-fidelity mockups you should:
 
 Create a blog section with your own design. Here we provide a fake API for 100 post: https://jsonplaceholder.typicode.com/posts
 
-Take account of post SEO.
+Take account of every post SEO.
 
 > **TIP**: Pagination is the key
 
