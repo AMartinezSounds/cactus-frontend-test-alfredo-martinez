@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-auto w-10/12;
+  }
+  h1 {
+    @apply font-bold tracking-wide text-2xl sm:text-3xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  li {
+    @apply font-semibold tracking-wide text-sm cursor-pointer;
+  }
+}

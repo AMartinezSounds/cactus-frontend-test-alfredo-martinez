@@ -1,20 +1,16 @@
 import Head from 'next/head'
-import Navbar from '../src/components/Nav/Navbar'
-import Footer from '../src/components/footer/Footer'
+import Layout from '../components/Layout'
+
 export default function Home () {
   return (
-    <div className=''>
+    <Layout>
       <Head>
-        <title>Alessio Muganni</title>
+        <title>Alessio Muganni - Home</title>
         <link rel='icon' href='/favicon.ico' />
-        <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&display=swap' rel='stylesheet' />
+        <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap' rel='stylesheet' />
       </Head>
+      <h1>hello</h1>
+    </Layout>
 
-      <main className=''>
-        <Navbar />
-        <p className='font-serif'>Project start</p>
-        <Footer />
-      </main>
-    </div>
   )
 }
