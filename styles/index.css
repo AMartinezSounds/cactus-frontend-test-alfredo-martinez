@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+.btn {
+  @apply {
+    text-errors
+  }
+}
+@tailwind utilities;
