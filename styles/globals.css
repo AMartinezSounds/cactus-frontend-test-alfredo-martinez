@@ -11,11 +11,20 @@
 .smallLine {
   @apply h-px w-[100px] bg-terciary;
 }
+
+.is-invalid {
+  @apply border-b border-errors border-solid;
+}
+
+.errorMessage {
+  @apply text-errors;
+}
+
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply m-auto w-10/12;
+    @apply m-auto w-10/12 overflow-x-hidden desktop:w-full;
   }
   h1 {
     @apply font-bold tracking-wide text-2xl sm:text-3xl;
@@ -28,5 +37,14 @@
   }
   p {
     @apply font-bold text-secondary tracking-wide;
+  }
+  label {
+    @apply text-sm;
+  }
+  input {
+    @apply border-b border-solid border-primary bg-transparent w-full p-2;
+  }
+  textarea {
+    @apply resize-none border-b border-solid border-primary bg-transparent w-full px-2 mt-4 pb-10;
   }
 }

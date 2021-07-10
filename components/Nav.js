@@ -12,8 +12,8 @@ const Icon = styled.div`
 
 function Nav ({ crossButton, setCrossButton }) {
   return (
-    <nav className='flex h-24 desktop:absolute top:0 left-[13rem] right-[13rem] bg-white'>
-      <div className='w-11/12 m-auto flex justify-between items-center md:w-full desktop:w-11/12'>
+    <nav className='flex h-24 desktop:absolute top:0 left-[5rem] right-[5rem] bg-white'>
+      <div className='w-11/12 m-auto flex justify-between items-center md:w-full ls:w-11/12'>
         <h1>Alessio Muganni</h1>
         <ul className='hidden sm2:flex justify-between w-5/12 md:w-4/12'>
           <li><Link>Home</Link></li>

@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import Layout from '../components/Layout'
 import About from '../components/about/About'
 import Introduction from '../components/introduction/Introduction'
-import Layout from '../components/Layout'
+import Formulary from '../components/form/Formulary'
+
 
 export default function Home () {
   return (
@@ -13,6 +15,7 @@ export default function Home () {
       </Head>
       <Introduction />
       <About />
+      <Formulary />
     </Layout>
 
   )

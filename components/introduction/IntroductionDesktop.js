@@ -2,11 +2,11 @@ import React from 'react'
 
 function IntroductionDesktop () {
   return (
-    <div className='desktop:h-screen'>
+    <div className=''>
       <div 
-        className='h-[80vh] bg-black bg-center bg-cover phone:hidden ls:block' 
+        className='bg-black bg-center bg-cover phone:hidden ls:block h-screen' 
         style={{ 'background-image': 'linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)), url(/cover.jpg)' }} />
-      <div className='h-[370px] w-[90%] max-w-[938px] ml-24 -mt-44 bg-white phone:hidden ls:flex flex-col border'>
+      <div className='h-[370px] w-[90%] max-w-[938px] ml-[5rem] -mt-60 bg-white phone:hidden ls:flex flex-col border'>
         <div className='h-full w-[753px] mx-auto'>
           <h2 className='text-5xl mt-8'>Introduction</h2>
           <div className='smallLine my-8' />
