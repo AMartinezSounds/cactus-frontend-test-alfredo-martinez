@@ -1,6 +1,6 @@
 import React from 'react'
 
-function IntroductionTablet () {
+function IntroductionTablet ({ sectionTitle, description1, description2 }) {
   return (
     <div className='w-[78.39%] mx-auto desktop:hidden'>
       <div 
@@ -8,10 +8,10 @@ function IntroductionTablet () {
         style={{ 'background-image': 'linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)), url(/cover.jpg)' }}/>
       <div className='h-[433px] mx-auto -mt-44 w-5/6 bg-white phone:hidden md:flex flex-col border ls:hidden'>
         <div className='h-full w-4/6 mx-auto'>
-          <h2 className='text-5xl mt-4'>Introduction</h2>
+          <h2 className='text-5xl mt-4'>{sectionTitle}</h2>
           <div className='smallLine my-8' />
-          <p className='text-secondary font-bold'>Over the past 10 years, I have worked on all kinds of projects. From stations to high-rise buildings, I create spaces that inspire and delight. </p>
-          <p className='my-8 text-secondary font-bold'>We work closely with our clients so that we understand the intricacies of each project. This allows us to work in harmony the surrounding area to create truly stunning projects that will stand the test of time.</p>
+          <p className='text-secondary font-bold'>{description1}</p>
+          <p className='my-8 text-secondary font-bold'>{description2}</p>
         </div>
       </div>
     </div>

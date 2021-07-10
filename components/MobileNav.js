@@ -7,8 +7,8 @@ const MobileNavStyle = styled.div`
    transition: top 0.33s ease;
    top: ${(props) => (props.show === 'false' ? '-25.4rem' : '11.7%')};
    right: 0;
-   left: 1.8rem;
-   
+   left: 70px;
+   z-index: 10;
 `
 
 function MobileNav ({ crossButton, setCrossButton }) {

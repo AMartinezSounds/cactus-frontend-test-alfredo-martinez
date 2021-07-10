@@ -4,6 +4,7 @@ import About from '../components/about/About'
 import Introduction from '../components/introduction/Introduction'
 import Formulary from '../components/form/Formulary'
 
+import Fade from 'react-reveal/Fade'
 
 export default function Home () {
   return (
@@ -13,17 +14,25 @@ export default function Home () {
         <link rel='icon' href='/favicon.ico' />
         <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap' rel='stylesheet' />
       </Head>
-      <section id='home'>
-        <Introduction />
-      </section>
-      <section id='about'>
-        <About />
-      </section>
-      <div className='smallSeparator' />
-      <div className='largeSeparator' />
-      <section id='contact'>
-        <Formulary />
-      </section>
+      <Fade>
+        <section id='home'>
+          <Introduction />
+        </section>
+      </Fade>
+      <Fade fraction='0.3'>
+        <section id='about'>
+          <About />
+        </section>
+      </Fade>
+      <Fade fraction='0.1'>
+        <div className='smallSeparator' />
+        <div className='largeSeparator' />
+      </Fade>
+      <Fade fraction='0.3'>
+        <section id='contact'>
+          <Formulary />
+        </section>
+      </Fade>
     </Layout>
 
   )

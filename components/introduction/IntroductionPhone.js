@@ -1,6 +1,6 @@
 import React from 'react'
 
-function IntroductionPhone () {
+function IntroductionPhone ({ sectionTitle, description1, description2 }) {
   return (
     <div className='w-[90%] mx-auto'>
       <div 
@@ -10,9 +10,9 @@ function IntroductionPhone () {
         <div className='h-10 w-5/6 bg-white' />	
       </div>
       <div className='flex flex-col justify-start gap-y-7 md:hidden'>
-        <h2 className='text-sectionTitle'>Introduction</h2>
-        <p className='sm2:w-[90%]'>Over the past 10 years, I have worked on all kinds of projects. From stations to high-rise buildings, I create spaces that inspire and delight. </p>
-        <p className='sm2:w-[90%]'>We work closely with our clients so that we understand the intricacies of each project. This allows us to work in harmony the surrounding area to create truly stunning projects that will stand the test of time.</p>
+        <h2 className='text-sectionTitle'>{sectionTitle}</h2>
+        <p className='sm2:w-[90%]'>{description1}</p>
+        <p className='sm2:w-[90%]'>{description2}</p>
       </div>
     </div>
   )

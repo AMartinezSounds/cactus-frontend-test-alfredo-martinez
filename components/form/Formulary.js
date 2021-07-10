@@ -29,9 +29,9 @@ function Formulary () {
       }}
     >
       {(formik) => (
-        <div className='h-[700px] mx-auto flex flex-col justify-between ls:flex-row items-end h-[540px] w-[89%] mb-[150px] mt-[75px]'>
+        <div className='h-[700px] mx-auto flex flex-col justify-between ls:flex-row items-end h-[640px] w-[89%] mb-[150px] mt-[75px]'>
           <h2 className='w-[70%] h-[20%] ml-0 mr-auto text-sectionTitle pr-8 leading-10 sm:w-[90%] text-left md:w-full text-center ls:w-[25%] text-left h-full desktop:w-[20%] self-start'>Connect with me</h2>
-          <Form className='w-full flex flex-col justify-between h-[80%] md:max-w-[550px] mx-auto ls:w-[75%] h-[500px]'>
+          <Form className='w-full flex flex-col justify-between h-[80%] md:max-w-[550px] mx-auto ls:w-[75%] h-[600px]'>
             <TextField label='Name' name='name' type='text' />
             <TextField label='Email' name='email' type='email' />
             <TextField label='Phone (optional)' name='phone' type='text' />
