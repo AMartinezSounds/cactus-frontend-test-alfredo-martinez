@@ -5,7 +5,7 @@ import alessioPic from '../../public/alessio.jpg'
 
 function AboutDesktop () {
   return (
-    <div className='phone:hidden ls:flex justify-between mx-auto w-[88.8%] mb-[150px]'>
+    <div className='phone:hidden ls:flex justify-between mx-auto w-[88.8%] mb-[75px]'>
       <div className='w-[47%] h-[100%]'>
         <Image src={alessioPic} alt='Picture of Alessio' className='object-cover' />
       </div>

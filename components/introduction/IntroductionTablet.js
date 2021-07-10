@@ -2,7 +2,7 @@ import React from 'react'
 
 function IntroductionTablet () {
   return (
-    <div className='desktop:hidden'>
+    <div className='w-[78.39%] mx-auto desktop:hidden'>
       <div 
         className='h-[671px] bg-black bg-center bg-cover phone:hidden md:block ls:hidden' 
         style={{ 'background-image': 'linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)), url(/cover.jpg)' }}/>

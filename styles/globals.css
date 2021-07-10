@@ -12,6 +12,14 @@
   @apply h-px w-[100px] bg-terciary;
 }
 
+.smallSeparator {
+  @apply bg-terciary h-px w-[25%] ml-8 mr-auto md:hidden;
+}
+
+.largeSeparator {
+  @apply phone:hidden md:block bg-terciary h-px w-[65%] mx-auto;
+}
+
 .is-invalid {
   @apply border-b border-errors border-solid;
 }
@@ -24,7 +32,7 @@
 
 @layer base {
   body {
-    @apply m-auto w-10/12 overflow-x-hidden desktop:w-full;
+    @apply overflow-x-hidden desktop:w-full;
   }
   h1 {
     @apply font-bold tracking-wide text-2xl sm:text-3xl;
@@ -46,8 +54,5 @@
   }
   textarea {
     @apply resize-none border-b border-solid border-primary bg-transparent w-full px-2 mt-4 pb-10;
-  }
-  footer {
-    @apply w-screen !important;
   }
 }

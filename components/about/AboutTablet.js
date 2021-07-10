@@ -5,7 +5,7 @@ import alessioPic from '../../public/alessio.jpg'
 
 function AboutTablet () {
   return (
-    <div className='phone:hidden md:flex flex-col justify-between h-[788px] ls:hidden'>
+    <div className='phone:hidden mb-[150px] md:flex w-[78.39%] mx-auto flex-col justify-between h-[788px] ls:hidden'>
       <Image src={alessioPic} alt='Picture of Alessio' className='object-cover  object-center' />
       <div className='h-[30%] min-h-[233px] flex flex-col justify-between'>
         <h2 className='text-sectionTitle'>About Me</h2>

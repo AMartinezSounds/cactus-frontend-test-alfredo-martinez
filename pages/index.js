@@ -19,6 +19,8 @@ export default function Home () {
       <section id='about'>
         <About />
       </section>
+      <div className='smallSeparator' />
+      <div className='largeSeparator' />
       <section id='contact'>
         <Formulary />
       </section>
