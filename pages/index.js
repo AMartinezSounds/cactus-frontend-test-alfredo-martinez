@@ -13,9 +13,15 @@ export default function Home () {
         <link rel='icon' href='/favicon.ico' />
         <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap' rel='stylesheet' />
       </Head>
-      <Introduction />
-      <About />
-      <Formulary />
+      <section id='home'>
+        <Introduction />
+      </section>
+      <section id='about'>
+        <About />
+      </section>
+      <section id='contact'>
+        <Formulary />
+      </section>
     </Layout>
 
   )

@@ -47,4 +47,7 @@
   textarea {
     @apply resize-none border-b border-solid border-primary bg-transparent w-full px-2 mt-4 pb-10;
   }
+  footer {
+    @apply w-screen !important;
+  }
 }

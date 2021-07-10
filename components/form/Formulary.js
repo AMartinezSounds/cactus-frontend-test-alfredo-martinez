@@ -29,16 +29,16 @@ function Formulary () {
       }}
     >
       {(formik) => (
-        <div className='h-[680px] mx-auto flex flex-col justify-between ls:flex-row items-end h-[540px] w-[89%]'>
-          <h2 className='text-sectionTitle pr-8 leading-10 md:text-center ls:w-[20%] h-full text-left'>Connect with me</h2>
-          <Form className='flex flex-col justify-between h-[550px] ls:w-[60%] h-[500px]'>
+        <div className='h-[680px] mx-auto flex flex-col justify-between ls:flex-row items-end h-[540px] w-[89%] mb-[150px]'>
+          <h2 className='text-sectionTitle pr-8 leading-10 md:text-center ls:text-left w-[20%] h-full'>Connect with me</h2>
+          <Form className='flex flex-col justify-between h-[550px] ls:w-[75%] h-[500px]'>
             <TextField label='Name' name='name' type='text' />
             <TextField label='Email' name='email' type='email' />
             <TextField label='Phone (optional)' name='phone' type='text' />
             <TextArea label='Message' name='message' />
             <div className='flex items-center'>
-              <Field type='checkbox' name='terms' value='terms' className='w-1/12 -ml-2 ls:-ml-6' />
-              <label htmlFor='terms' className='w-11/12'>Accept terms and conditions</label>
+              <Field type='checkbox' name='terms' value='terms' className='w-[5%] -ml-4' />
+              <label htmlFor='terms' className='w-[95%]'>Accept terms and conditions</label>
             </div>
             <div className='flex items-center'>
               <button type='submit' className='btn mx-auto'>Send message</button>

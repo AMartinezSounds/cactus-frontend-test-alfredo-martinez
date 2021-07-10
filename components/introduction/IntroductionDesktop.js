@@ -2,7 +2,7 @@ import React from 'react'
 
 function IntroductionDesktop () {
   return (
-    <div className=''>
+    <div className='mb-[150px]'>
       <div 
         className='bg-black bg-center bg-cover phone:hidden ls:block h-screen' 
         style={{ 'background-image': 'linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)), url(/cover.jpg)' }} />

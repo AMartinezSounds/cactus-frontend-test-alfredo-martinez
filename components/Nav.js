@@ -16,9 +16,9 @@ function Nav ({ crossButton, setCrossButton }) {
       <div className='w-11/12 m-auto flex justify-between items-center md:w-full ls:w-11/12'>
         <h1>Alessio Muganni</h1>
         <ul className='hidden sm2:flex justify-between w-5/12 md:w-4/12'>
-          <li><Link>Home</Link></li>
-          <li><Link>About</Link></li>
-          <li><Link>Contact</Link></li>
+          <li><Link to='home' activeClass='active' spy={true} smooth={true} duration={750}>Home</Link></li>
+          <li><Link to='about' activeClass='active' spy={true} smooth={true} duration={750}>About</Link></li>
+          <li><Link to='contact' activeClass='active' spy={true} smooth={true} duration={750}>Contact</Link></li>
         </ul>
         <Icon
           onClick={() =>
