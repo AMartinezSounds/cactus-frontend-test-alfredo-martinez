@@ -4,9 +4,9 @@ function IntroductionTablet () {
   return (
     <div className='desktop:hidden'>
       <div 
-        className='h-[671px] bg-black bg-center bg-cover phone:hidden md:block' 
+        className='h-[671px] bg-black bg-center bg-cover phone:hidden md:block ls:hidden' 
         style={{ 'background-image': 'linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)), url(/cover.jpg)' }}/>
-      <div className='h-[433px] mx-auto -mt-44 w-5/6 bg-white phone:hidden md:flex flex-col border'>
+      <div className='h-[433px] mx-auto -mt-44 w-5/6 bg-white phone:hidden md:flex flex-col border ls:hidden'>
         <div className='h-full w-4/6 mx-auto'>
           <h2 className='text-5xl mt-4'>Introduction</h2>
           <div className='h-px w-[100px] my-8 bg-terciary' />

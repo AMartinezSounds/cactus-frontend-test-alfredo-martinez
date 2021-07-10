@@ -4,6 +4,13 @@
   @apply border border-terciary border-solid;
 }
 
+.btn {
+  @apply bg-primary text-white px-[70px] py-[25px] font-bold;
+}
+
+.smallLine {
+  @apply h-px w-[100px] bg-terciary;
+}
 @tailwind utilities;
 
 @layer base {
@@ -18,5 +25,8 @@
   }
   li {
     @apply font-semibold tracking-wide text-sm cursor-pointer;
+  }
+  p {
+    @apply font-bold text-secondary tracking-wide;
   }
 }

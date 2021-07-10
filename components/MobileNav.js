@@ -14,7 +14,7 @@ const MobileNavStyle = styled.div`
 function MobileNav ({ crossButton, setCrossButton }) {
   return (
     <MobileNavStyle show={crossButton}>
-      <nav className='h-[49vh]'>
+      <nav className='h-[381px]'>
         <ul className='h-full flex flex-col justify-evenly bg-white'>
           <li className='text-center text-xl'>
             <Link onClick={() => setCrossButton('false')}>
