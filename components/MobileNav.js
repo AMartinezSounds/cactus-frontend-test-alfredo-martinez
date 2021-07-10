@@ -5,17 +5,17 @@ import { Link } from 'react-scroll'
 const MobileNavStyle = styled.div`
    position: absolute;
    transition: top 0.33s ease;
-   top: ${(props) => (props.show === 'false' ? '-25.4rem' : '12.5%')};
+   top: ${(props) => (props.show === 'false' ? '-25.4rem' : '11.8%')};
    right: 0;
-   left: 1.95rem;
+   left: 1.8rem;
    
 `
 
 function MobileNav ({ crossButton, setCrossButton }) {
   return (
     <MobileNavStyle show={crossButton}>
-      <nav className='h-[50vh]'>
-        <ul className='h-full flex flex-col justify-evenly'>
+      <nav className='h-[49vh]'>
+        <ul className='h-full flex flex-col justify-evenly bg-white'>
           <li className='text-center text-xl'>
             <Link onClick={() => setCrossButton('false')}>
               Home

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Introduction from '../components/introduction/Introduction'
 import Layout from '../components/Layout'
 
 export default function Home () {
@@ -9,7 +10,7 @@ export default function Home () {
         <link rel='icon' href='/favicon.ico' />
         <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap' rel='stylesheet' />
       </Head>
-      <h1>hello</h1>
+      <Introduction />
     </Layout>
 
   )

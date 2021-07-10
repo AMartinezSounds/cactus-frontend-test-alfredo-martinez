@@ -46,6 +46,9 @@ module.exports = {
         secondary: '#60636D',
         terciary: '#C8CCD8',
         errors: '#DF5656'
+      },
+      fontSize: {
+        sectionTitle: '2.6rem'
       }
     }
   },
