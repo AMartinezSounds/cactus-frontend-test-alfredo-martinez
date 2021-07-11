@@ -4,7 +4,7 @@ import { GrFacebook, GrInstagram, GrLinkedin } from 'react-icons/gr'
 
 function Footer () {
   return (
-    <footer className='h-[500px] bg-primary flex flex-col items-center justify-evenly ls:flex-row ls:h-[150px] ls:justify-around'>
+    <footer className='h-[500px] bg-primary flex flex-col items-center justify-evenly ls:flex-row ls:h-[100px] ls:justify-around'>
       <h1 className='text-white'>Alessio Muganni</h1>
       <nav className='w-[60%] h-[30%] ls:w-[25%]'>
         <ul className='text-white flex flex-col items-center justify-between h-full ls:flex-row'>
@@ -13,7 +13,7 @@ function Footer () {
           <li className='text-xl ls:text-base'><Link to='contact' activeClass='active' spy={true} smooth={true} duration={750}>Contact</Link></li>
         </ul>
       </nav>
-      <ul className='flex justify-between w-[40%] ls:w-[10%]'>
+      <ul className='flex justify-between w-[40%] max-w-[150px]'>
         <li>
           <a target='_blank' rel='noreferrer' href='https://www.facebook.com'>
             <GrFacebook style={{ color: 'white', fontSize: '1.4rem' }} />

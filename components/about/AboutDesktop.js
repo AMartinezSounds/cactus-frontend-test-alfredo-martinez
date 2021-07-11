@@ -15,7 +15,7 @@ function AboutDesktop ({ sectionTitle, description }) {
         <p className='w-[65%]'>{description}</p>
 	      <div className='py-[25px]'>
           <Link href='/'>
-            <a className='btn '>View my profile</a>
+            <a className='btn '>View my portfolio</a>
           </Link>
         </div>
       </div>		

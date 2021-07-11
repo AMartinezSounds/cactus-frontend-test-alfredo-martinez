@@ -1,11 +1,16 @@
 @tailwind base;
 @tailwind components;
+
 .border {
   @apply border border-terciary border-solid;
 }
 
 .btn {
   @apply bg-primary text-white px-[70px] py-[25px] font-bold;
+}
+
+.mobileNavOff {
+  @apply absolute right-[0] left-[80px] z-10 h-[381px] bg-white transition duration-500 ease-in-out;
 }
 
 .smallLine {

@@ -14,7 +14,7 @@ function AboutTablet ({ sectionTitle, description }) {
       </div>
       <div className='py-[25px] ml-auto mr-0 mt-4'>
         <Link href='/'>
-          <a className='btn '>View my profile</a>
+          <a className='btn '>View my portfolio</a>
         </Link>
       </div>		
     </div>
