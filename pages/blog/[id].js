@@ -37,9 +37,9 @@ function Post ({ postText, postImage }) {
       <div className='w-[90%] mx-auto desktop:pt-28'>
         <h1 className='text-sectionTitle leading-10 mb-8 ls:mb-20'>{postText.title}</h1>
         <div className='ls:flex'>
-          <p className='mb-8 ls:mb-0 w-[60%] pr-12'>{postText.body}</p>
-          <div>
-            <Image className='object-contain' src={postImage.url} width={600} height={600} alt={postImage.title} />
+          <p className='mb-8 ls:mb-0 ls:w-[60%] pr-12'>{postText.body}</p>
+          <div className='flex flex-col items-center'>
+            <Image className='object-contain md: mx-auto' src={postImage.url} width={600} height={600} alt={postImage.title} />
             <p className='mb-10'>{postImage.title}</p>
           </div>
         </div>
