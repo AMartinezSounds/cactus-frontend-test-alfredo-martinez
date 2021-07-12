@@ -12,6 +12,7 @@ export default function Home () {
         <title>Alessio Muganni - Home</title>
         <link rel='icon' href='/logo.png' />
         <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap' rel='stylesheet' />
+        <meta name='description' content='This is a portfolio and blog made by Alfredo Martínez for Estudio.' />
       </Head>
       <Fade>
         <section id='home'>
