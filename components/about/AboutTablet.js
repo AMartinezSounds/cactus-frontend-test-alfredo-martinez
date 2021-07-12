@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/Link'
+import Link from 'next/link'
 import alessioPic from '../../public/alessio.jpg'
 
 function AboutTablet ({ sectionTitle, description }) {
