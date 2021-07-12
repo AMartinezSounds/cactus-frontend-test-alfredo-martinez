@@ -1,20 +1,21 @@
 import React from 'react'
-import { Formik, Field, Form } from 'formik'
-import * as Yup from 'yup'
+import { Formik, Field, Form, ErrorMessage } from 'formik'
+import * as yup from 'yup'
 
 import TextField from './TextField'
 import TextArea from './TextArea'
 
 function Formulary () {
-  const validate = Yup.object({
-    name: Yup.string()
+  const validate = yup.object().shape({
+    name: yup.string()
       .min(2, 'Enter a valid name')
       .max(15, 'Must be 15 characters or less')
       .required("Can't be empty"),
-    email: Yup.string().email('Enter a valid email').required("Can't be empty"),
-    message: Yup.string()
+    email: yup.string().email('Enter a valid email').required("Can't be empty"),
+    message: yup.string()
       .max(500, 'Must be 500 characters or less')
-      .required("Can't be empty")
+      .required("Can't be empty"),
+    terms: yup.bool().required('**')
   })
   return (
     <Formik
@@ -22,23 +23,25 @@ function Formulary () {
         name: '',
         email: '',
         phone: '',
-        message: ''
+        message: '',
+        terms: false
       }}
       validationSchema={validate}
       onSubmit={(values) => {
       }}
     >
-      {(formik) => (
+      {({ formik }) => (
         <div className='h-[700px] mx-auto flex flex-col justify-between ls:flex-row items-end h-[640px] w-[89%] mb-[150px] mt-[75px]'>
-          <h2 className='w-[70%] h-[20%] ml-0 mr-auto text-sectionTitle pr-8 leading-10 sm:w-[90%] text-left md:w-full text-center ls:w-[25%] text-left h-full desktop:w-[20%] self-start'>Connect with me</h2>
+          <h2 className='w-[70%] h-[20%] text-sectionTitle pr-8 leading-10 sm:w-[90%] md:w-full text-center ls:w-[25%] text-left h-full desktop:w-[20%] self-start'>Connect with me</h2>
           <Form className='w-full flex flex-col justify-between h-[80%] md:max-w-[550px] mx-auto ls:w-[75%] h-[600px]'>
             <TextField className='focus:outline-none' label='Name' name='name' type='text' />
             <TextField className='focus:outline-none' label='Email' name='email' type='email' />
             <TextField className='focus:outline-none' label='Phone (optional)' name='phone' type='text' />
             <TextArea className='focus:outline-none' label='Message' name='message' />
             <div className='flex items-center'>
-              <Field type='checkbox' name='terms' value='terms' className='w-[5%]' />
-              <label htmlFor='terms' className='w-[95%]'>Accept terms and conditions</label>
+              <Field type='checkbox' name='terms' value='acceptedTerms' className='w-[5%]' checked />
+              <label htmlFor='terms' className='w-[58%]'>Accept terms and conditions</label>
+              <ErrorMessage name='terms' component='div' className='errorMessage' />
             </div>
             <div className='flex items-center'>
               <button type='submit' className='btn mx-auto'>Send message</button>

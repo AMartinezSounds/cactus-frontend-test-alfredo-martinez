@@ -6,7 +6,7 @@ import Link from 'next/link'
 function MobileNav ({ setCrossButton, crossButton }) {
   const router = useRouter()
   return (
-    <div className={`mobileNavOff ${crossButton === 'false' ? 'top-[0px]' : 'top-[95px]'} ${router.pathname.includes('/blog') ? 'hidden' : ''}`}>
+    <nav className={`mobileNavOff ${crossButton === 'false' ? 'top-[0px]' : 'top-[95px]'} ${router.pathname.includes('/blog') ? 'hidden' : ''}`}>
       <ul className='h-full flex flex-col justify-evenly'>
         <li className='text-center text-xl'>
           <LinkScroll to='home' smooth duration={750} onClick={() => setCrossButton('false')}>
@@ -31,7 +31,7 @@ function MobileNav ({ setCrossButton, crossButton }) {
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   )
 }
 

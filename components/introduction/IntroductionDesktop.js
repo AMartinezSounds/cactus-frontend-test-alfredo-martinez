@@ -5,7 +5,7 @@ function IntroductionDesktop ({ sectionTitle }) {
     <div className='mb-[150px]'>
       <div
         className='bg-black bg-center bg-cover phone:hidden ls:block h-screen'
-        style={{ 'background-image': 'linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)), url(/cover.jpg)' }}
+        style={{ backgroundImage: 'linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)), url(/cover.jpg)' }}
       />
       <div className='h-[240px] w-[42%] ml-[5rem] -mt-60 bg-transparent text-white phone:hidden ls:flex border-2 border-white'>
         <div className='h-full w-[80%] flex items-center mx-auto'>
