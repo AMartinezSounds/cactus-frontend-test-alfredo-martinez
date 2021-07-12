@@ -11,18 +11,18 @@ function Nav ({ crossButton, setCrossButton }) {
   return (
     <nav className='flex z-10 h-24 desktop:absolute top:0 left-[5rem] right-[5rem] bg-white'>
       <div className='w-[90%] mx-auto flex justify-between items-center md:w-[77.39%] ls:w-11/12 '>
-        <Link href='/'><a><h1>Alessio Muganni</h1></a></Link>
+        <Link href='/' onClick={() => setCrossButton('false')}><a><h1 className={router.pathname.includes('/blog') ? 'text-3xl' : ''}>Alessio Muganni</h1></a></Link>
         {crossButton === 'false'
-          ? <ul className='hidden sm2:flex justify-between w-5/12 md:w-4/12'>
+          ? <ul className='hidden sm2:flex justify-between w-5/12 md:w-5/12'>
             <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='home' smooth duration={750}>Home</LinkScroll></li>
             <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='about' smooth duration={750} offset={-75}>About</LinkScroll></li>
             <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='contact' smooth duration={750} offset={-75}>Contact</LinkScroll></li>
-            <li className={router.pathname.includes('/blog') ? 'ml-auto mr-0' : ''}><Link href='/blog'>Blog</Link></li>
+            <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><Link href='/blog'>Blog</Link></li>
             {/* eslint-disable-next-line */}
             </ul>
-          : <MobileNav setCrossButton={setCrossButton} crossButton={crossButton} />}
+          : <MobileNav setCrossButton={setCrossButton} crossButton={crossButton} className={router.pathname.includes('/blog') ? 'hidden' : ''} />}
         <div className='block sm2:hidden' onClick={() => crossButton === 'false' ? setCrossButton('true') : setCrossButton('false')}>
-          {crossButton === 'false' ? <GiHamburgerMenu style={{ fontSize: '1.5rem' }} /> : <FaTimes style={{ fontSize: '1.5rem' }} />}
+          {crossButton === 'false' ? <GiHamburgerMenu className={router.pathname.includes('/blog') ? 'hidden' : ''} style={{ fontSize: '1.5rem' }} /> : <FaTimes className={router.pathname.includes('/blog') ? 'hidden' : ''} style={{ fontSize: '1.5rem' }} />}
         </div>
       </div>
     </nav>

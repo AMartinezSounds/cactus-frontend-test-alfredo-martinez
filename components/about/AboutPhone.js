@@ -5,7 +5,7 @@ import alessioPic from '../../public/alessioPhone.jpg'
 
 function AboutPhone ({ sectionTitle, description }) {
   return (
-    <div className='mb-[150px] w-[90%] mx-auto h-[850px] flex flex-col justify-between md:hidden'>
+    <div className='h-[850px] flex flex-col justify-between md:hidden'>
       <Image src={alessioPic} alt='Picture of Alessio' />
       <div className='h-[400px] flex flex-col justify-between sm:justify-around'>
         <h2 className='text-sectionTitle phone:mb-8 sm:mb-0'>{sectionTitle}</h2>

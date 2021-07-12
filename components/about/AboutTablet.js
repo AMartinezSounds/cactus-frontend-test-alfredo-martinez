@@ -5,8 +5,8 @@ import alessioPic from '../../public/alessio.jpg'
 
 function AboutTablet ({ sectionTitle, description }) {
   return (
-    <div className='phone:hidden mb-[150px] md:flex w-[78.39%] mx-auto flex-col justify-between h-[788px] ls:hidden'>
-      <Image src={alessioPic} alt='Picture of Alessio' className='object-cover  object-center' />
+    <div className='phone:hidden md:flex w-[78.39%] mx-auto flex-col justify-between h-[788px] ls:hidden'>
+      <Image src={alessioPic} alt='Picture of Alessio' className='object-cover' />
       <div className='h-[50%] mt-4 min-h-[233px] flex flex-col justify-between'>
         <h2 className='text-sectionTitle'>{sectionTitle}</h2>
         <div className='smallLine' />

@@ -6,14 +6,14 @@ import { useRouter } from 'next/router'
 function Footer () {
   const router = useRouter()
   return (
-    <footer className='h-[500px] bg-primary flex flex-col items-center justify-evenly ls:flex-row ls:h-[100px] ls:justify-around'>
+    <footer className={`${router.pathname.includes('/blog') ? 'h-[150px]' : 'h-[500px]'} bg-primary flex flex-col items-center justify-evenly ls:flex-row ls:h-[100px] ls:justify-around`}>
       <Link href='/'><a><h1 className='text-white'>Alessio Muganni</h1></a></Link>
       <nav className='w-[60%] h-[30%] ls:w-[25%]'>
         <ul className='text-white flex flex-col items-center justify-between h-full ls:flex-row'>
-          <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='home' activeClass='active' spy smooth duration={750}>Home</LinkScroll></li>
-          <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='about' activeClass='active' spy smooth duration={750} offset={-75}>About</LinkScroll></li>
-          <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='contact' activeClass='active' spy smooth duration={750} offset={-75}>Contact</LinkScroll></li>
-          <li className={router.pathname.includes('/blog') ? 'mx-auto' : ''}><Link href='/blog'>Blog</Link>
+          <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='home' smooth duration={750}>Home</LinkScroll></li>
+          <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='about' smooth duration={750} offset={-75}>About</LinkScroll></li>
+          <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='contact' smooth duration={750} offset={-75}>Contact</LinkScroll></li>
+          <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><Link href='/blog'>Blog</Link>
           </li>
         </ul>
       </nav>
