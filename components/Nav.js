@@ -18,6 +18,7 @@ function Nav ({ crossButton, setCrossButton }) {
             <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='about' smooth duration={750} offset={-75}>About</LinkScroll></li>
             <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='contact' smooth duration={750} offset={-75}>Contact</LinkScroll></li>
             <li className={router.pathname.includes('/blog') ? 'ml-auto mr-0' : ''}><Link href='/blog'>Blog</Link></li>
+            {/* eslint-disable-next-line */}
             </ul>
           : <MobileNav setCrossButton={setCrossButton} crossButton={crossButton} />}
         <div className='block sm2:hidden' onClick={() => crossButton === 'false' ? setCrossButton('true') : setCrossButton('false')}>

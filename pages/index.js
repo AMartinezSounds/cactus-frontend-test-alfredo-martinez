@@ -10,7 +10,7 @@ export default function Home () {
     <>
       <Head>
         <title>Alessio Muganni - Home</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/logo.png' />
         <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap' rel='stylesheet' />
       </Head>
       <Fade>

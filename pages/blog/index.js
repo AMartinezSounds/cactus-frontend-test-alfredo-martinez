@@ -4,7 +4,6 @@ import BlogPost from '../../components/blog/BlogPost'
 import { useState, useEffect } from 'react'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
 
-
 export async function getStaticProps () {
   const resText = await fetch('https://jsonplaceholder.typicode.com/posts')
   const resImages = await fetch('https://jsonplaceholder.typicode.com/photos')
@@ -14,7 +13,6 @@ export async function getStaticProps () {
     props: { postsText: dataText, postsImages: dataImages }
   }
 }
-
 
 export default function Posts ({ postsText, postsImages }) {
   /* eslint-disable-next-line */
@@ -55,7 +53,7 @@ export default function Posts ({ postsText, postsImages }) {
     <>
       <Head>
         <title>Alessio Muganni - Blog</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/logo.png' />
         <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap' rel='stylesheet' />
       </Head>
       <div className='w-[90%] mx-auto desktop:pt-28'>
@@ -66,9 +64,9 @@ export default function Posts ({ postsText, postsImages }) {
           })}
         </div>
         <div className='flex justify-between items-center w-[25%] min-w-[300px] mx-auto my-[75px]'>
-          <button onClick={() => handlePageClick(selectedPage, false)}><MdKeyboardArrowLeft style={{ fontSize: '2rem' }}/></button>
+          <button onClick={() => handlePageClick(selectedPage, false)}><MdKeyboardArrowLeft style={{ fontSize: '2rem' }} /></button>
           <p className='text-primary text-xl'>{selectedPage} / {pages}</p>
-          <button onClick={() => handlePageClick(selectedPage, true)}><MdKeyboardArrowRight style={{ fontSize: '2rem' }}/></button>
+          <button onClick={() => handlePageClick(selectedPage, true)}><MdKeyboardArrowRight style={{ fontSize: '2rem' }} /></button>
         </div>
       </div>
     </>
