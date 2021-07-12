@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import fetch from 'node-fetch'
 import BlogPost from '../../components/blog/BlogPost'
 
@@ -22,13 +23,20 @@ export default function Posts ({ postsText, postsImages }) {
     return postImage.thumbnailUrl
   })
   return (
-    <div className='w-[90%] mx-auto desktop:pt-28'>
-      <h1 className='w-[90%] mx-auto mb-8 text-center text-sectionTitle'>Blog</h1>
-      <div className='flex gap-y-[40px] flex-col ls:flex-row flex-wrap gap-x-px'>
-        {postsText.map((post, i) => {
-          return <BlogPost post={post} image={images[i]} key={i} />
-        })}
+    <>
+      <Head>
+        <title>Alessio Muganni - Blog</title>
+        <link rel='icon' href='/favicon.ico' />
+        <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap' rel='stylesheet' />
+      </Head>
+      <div className='w-[90%] mx-auto desktop:pt-28'>
+        <h1 className='w-[90%] mx-auto mb-8 text-center text-sectionTitle'>Blog</h1>
+        <div className='flex gap-y-[40px] flex-col ls:flex-row flex-wrap gap-x-px'>
+          {postsText.map((post, i) => {
+            return <BlogPost post={post} image={images[i]} key={i} />
+          })}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
