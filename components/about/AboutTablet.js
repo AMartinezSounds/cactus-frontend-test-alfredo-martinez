@@ -7,10 +7,10 @@ function AboutTablet ({ sectionTitle, description }) {
   return (
     <div className='phone:hidden mb-[150px] md:flex w-[78.39%] mx-auto flex-col justify-between h-[788px] ls:hidden'>
       <Image src={alessioPic} alt='Picture of Alessio' className='object-cover  object-center' />
-      <div className='h-[30%] min-h-[233px] flex flex-col justify-between'>
+      <div className='h-[50%] mt-4 min-h-[233px] flex flex-col justify-between'>
         <h2 className='text-sectionTitle'>{sectionTitle}</h2>
         <div className='smallLine' />
-        <p className='w-[91%] max-w-[550px]'>{description}</p>
+        <p className='max-w-[600px]'>{description}</p>
       </div>
       <div className='py-[25px] ml-auto mr-0 mt-4'>
         <Link href='/'>

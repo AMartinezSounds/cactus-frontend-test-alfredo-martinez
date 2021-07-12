@@ -10,9 +10,9 @@ function AboutDesktop ({ sectionTitle, description }) {
         <Image src={alessioPic} alt='Picture of Alessio' className='object-cover' />
       </div>
       <div className='flex flex-col justify-between w-[47%]'>
-        <h2 className='text-sectionTitle mt-4'>{sectionTitle}</h2>
+        <h2 className='text-sectionTitle'>{sectionTitle}</h2>
         <div className='smallLine' />
-        <p className='w-[65%]'>{description}</p>
+        <p className='w-[90%] tracking-[0.03rem]'>{description}</p>
 	      <div className='py-[25px]'>
           <Link href='/'>
             <a className='btn '>View my portfolio</a>
