@@ -33,6 +33,10 @@
   @apply text-errors;
 }
 
+.readBtn {
+  @apply bg-primary text-white py-4 px-8;
+}
+
 @tailwind utilities;
 
 @layer base {
@@ -51,6 +55,10 @@
   p {
     @apply font-bold text-secondary tracking-wide;
   }
+  a[aria-disabled="true"] {
+    @apply text-terciary;
+  }
+
   label {
     @apply text-sm;
   }
