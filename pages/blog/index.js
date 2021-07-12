@@ -55,8 +55,9 @@ export default function Posts ({ postsText, postsImages }) {
         <title>Alessio Muganni - Blog</title>
         <link rel='icon' href='/logo.png' />
         <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap' rel='stylesheet' />
+        <meta name='description' content='This is a portfolio and blog made by Alfredo Martínez for Estudio Cactus.' />
       </Head>
-      <div className='w-[90%] mx-auto desktop:pt-28'>
+      <section className='w-[90%] mx-auto desktop:pt-28'>
         <h1 className='w-[90%] mx-auto mb-8 text-center text-sectionTitle'>Blog</h1>
         <div className='flex flex-col gap-y-[40px] gap-x-px md:flex-row flex-wrap'>
           {diplayedPosts.map((post, i) => {
@@ -68,7 +69,7 @@ export default function Posts ({ postsText, postsImages }) {
           <p className='text-primary text-xl'>{selectedPage} / {pages}</p>
           <button onClick={() => handlePageClick(selectedPage, true)}><MdKeyboardArrowRight style={{ fontSize: '2rem' }} /></button>
         </div>
-      </div>
+      </section>
     </>
   )
 }

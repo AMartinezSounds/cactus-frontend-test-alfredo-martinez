@@ -10,11 +10,11 @@ function Introduction () {
     description2: 'We work closely with our clients so that we understand the intricacies of each project. This allows us to work in harmony the surrounding area to create truly stunning projects that will stand the test of time.'
   }
   return (
-    <div>
+    <section>
       <IntroductionPhone sectionTitle={data.sectionTitle} />
       <IntroductionTablet sectionTitle={data.sectionTitle} />
       <IntroductionDesktop sectionTitle={data.sectionTitle} />
-    </div>
+    </section>
   )
 }
 
