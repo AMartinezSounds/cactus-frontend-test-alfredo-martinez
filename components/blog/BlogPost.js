@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 function BlogPost ({ post, id, image }) {
   return (
-    <div className='w-[30%] min-w-[300px] mx-auto border border-terciary'>
+    <div className='w-[25%] min-w-[300px] mx-auto border border-terciary'>
       <div className='flex flex-col py-8 items-center justify-between h-[500px]'>
         <h2 className='mx-auto w-[90%] text-center text-xl'>{post.title}</h2>
         <Image className='object-contain' src={image} width={150} height={150} alt='blog image' />
