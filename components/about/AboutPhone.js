@@ -9,15 +9,15 @@ function AboutPhone ({ sectionTitle, description }) {
       <Image src={alessioPic} alt='Picture of Alessio' />
       <div className='h-[400px] flex flex-col justify-between sm:justify-around'>
         <h2 className='text-sectionTitle phone:mb-8 sm:mb-0'>{sectionTitle}</h2>
-	      <p>{description}</p>
+        <p>{description}</p>
       </div>
       <div className='py-[25px]'>
         <Link href='/'>
           <a className='btn'>View my portfolio</a>
         </Link>
-      </div>		
+      </div>
     </div>
- )
+  )
 }
 
 export default AboutPhone

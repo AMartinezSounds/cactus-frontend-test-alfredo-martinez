@@ -42,7 +42,7 @@ function Formulary () {
             </div>
             <div className='flex items-center'>
               <button type='submit' className='btn mx-auto'>Send message</button>
-            </div> 
+            </div>
           </Form>
         </div>
       )}

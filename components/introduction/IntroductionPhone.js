@@ -4,7 +4,7 @@ function IntroductionPhone ({ sectionTitle }) {
   return (
     <div className='w-[90%] mx-auto'>
       <div
-        className='h-[45vh]  flex items-end bg-black bg-center bg-cover md:hidden' 
+        className='h-[45vh]  flex items-end bg-black bg-center bg-cover md:hidden'
         style={{ 'background-image': 'linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/cover.jpg)' }}
       >
         <div className='h-10 w-5/6 bg-white -mb-px -ml-px' />

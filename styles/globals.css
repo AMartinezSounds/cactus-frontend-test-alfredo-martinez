@@ -50,7 +50,7 @@
     @apply font-bold tracking-wider;
   }
   li {
-    @apply font-semibold tracking-wide text-sm cursor-pointer;
+    @apply font-semibold tracking-wide cursor-pointer;
   }
   p {
     @apply font-bold text-secondary tracking-wide;

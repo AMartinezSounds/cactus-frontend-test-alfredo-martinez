@@ -16,9 +16,9 @@ function AboutTablet ({ sectionTitle, description }) {
         <Link href='/'>
           <a className='btn '>View my portfolio</a>
         </Link>
-      </div>		
+      </div>
     </div>
- )
+  )
 }
 
 export default AboutTablet
