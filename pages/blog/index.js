@@ -31,7 +31,7 @@ export default function Posts ({ postsText, postsImages }) {
       </Head>
       <div className='w-[90%] mx-auto desktop:pt-28'>
         <h1 className='w-[90%] mx-auto mb-8 text-center text-sectionTitle'>Blog</h1>
-        <div className='flex gap-y-[40px] flex-col ls:flex-row flex-wrap gap-x-px'>
+        <div className='flex flex-col gap-y-[40px] md:flex-row flex-wrap justify-evenly'>
           {postsText.map((post, i) => {
             return <BlogPost post={post} image={images[i]} key={i} />
           })}
