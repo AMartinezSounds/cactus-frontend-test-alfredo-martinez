@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import alessioPic from '../../public/alessio.jpg'
+import alessioPic from '../../public/alessioPhone.jpg'
 
 function AboutPhone ({ sectionTitle, description }) {
   return (
