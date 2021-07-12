@@ -1,20 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-function BlogPost ({ post, id, postImage }) {
+function BlogPost ({ post, id, image }) {
   return (
-    <>
-      <div className='w-[90%] mx-auto flex flex-col py-8'>
-        <h2>{post.title}</h2>
-        <div className='flex justify-between items-center'>
-          <div className='readBtn'>
-            <Link href={'/blog/' + post.id} key={post.id}>Read</Link>
-          </div>
-          <Image className='object-contain' src={postImage} width={150} height={150} alt='blog image' />
+    <div className='w-[30%] min-w-[300px] mx-auto border border-terciary'>
+      <div className='flex flex-col py-8 items-center justify-between h-[500px]'>
+        <h2 className='mx-auto w-[90%] text-center text-xl'>{post.title}</h2>
+        <Image className='object-contain' src={image} width={150} height={150} alt='blog image' />
+        <div className='readBtn'>
+          <Link href={'/blog/' + post.id} key={post.id}>Read</Link>
         </div>
-        <div className='smallLine' />
       </div>
-    </>
+    </div>
   )
 }
 
