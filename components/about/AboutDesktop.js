@@ -1,13 +1,14 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-import alessioPic from '../../public/alessio.jpg'
 
 function AboutDesktop ({ sectionTitle, description }) {
   return (
-    <div className='phone:hidden ls:flex justify-between mx-auto w-[88.8%] mb-[75px]'>
+    <div className='phone:hidden ls:flex justify-between mx-auto w-[90%] mb-[75px] h-[70vh] bg-gray-50'>
       <div className='w-[47%] h-[100%]'>
-        <Image src={alessioPic} alt='Picture of Alessio' className='object-cover' />
+        <div
+          className='bg-center bg-cover ls:block h-[50vh]'
+          style={{ backgroundImage: 'url(/alessio.jpg)' }}
+        />
       </div>
       <div className='flex flex-col justify-between w-[47%]'>
         <h2 className='text-sectionTitle'>{sectionTitle}</h2>

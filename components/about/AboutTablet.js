@@ -1,12 +1,13 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-import alessioPic from '../../public/alessio.jpg'
 
 function AboutTablet ({ sectionTitle, description }) {
   return (
-    <div className='phone:hidden md:flex w-[78.39%] mx-auto flex-col justify-between h-[788px] ls:hidden'>
-      <Image src={alessioPic} alt='Picture of Alessio' className='object-cover' />
+    <div className='phone:hidden md:flex w-[87%] mx-auto flex-col justify-between h-[788px] ls:hidden'>
+      <div
+        className='bg-center bg-cover ls:block h-[50vh]'
+        style={{ backgroundImage: 'url(/alessio.jpg)' }}
+      />
       <div className='h-[50%] mt-4 min-h-[233px] flex flex-col justify-between'>
         <h2 className='text-sectionTitle'>{sectionTitle}</h2>
         <div className='smallLine' />
