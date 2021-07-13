@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -14,8 +15,8 @@ function Nav ({ crossButton, setCrossButton }) {
         {crossButton === 'false'
           ? <ul className='hidden sm2:flex justify-between w-5/12 md:w-5/12'>
             <NavLink section='home' nameLink='Home' />
-            <NavLink section='about' nameLink='About' offset={-75} />
-            <NavLink section='contact' nameLink='Contact' offset={-75} />
+            <NavLink section='about' nameLink='About' offset={-75} setCrossButton={setCrossButton} />
+            <NavLink section='contact' nameLink='Contact' offset={-75} setCrossButton={setCrossButton} />
             <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><Link href='/blog'>Blog</Link></li>
             {/* eslint-disable-next-line */}
             </ul>
