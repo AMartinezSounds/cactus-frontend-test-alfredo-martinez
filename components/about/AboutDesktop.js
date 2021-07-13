@@ -4,7 +4,7 @@ import Link from 'next/link'
 function AboutDesktop ({ sectionTitle, description }) {
   return (
     <div className='phone:hidden ls:flex justify-between mx-auto w-[90%] mb-[75px] h-[70vh] bg-gray-50'>
-      <div className='w-[47%] h-[100%]'>
+      <div className='w-[47%] h-[100%] flex flex-col justify-center'>
         <div
           className='bg-center bg-cover ls:block h-[50vh]'
           style={{ backgroundImage: 'url(/alessio.jpg)' }}

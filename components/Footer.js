@@ -4,16 +4,16 @@ import { GrFacebook, GrInstagram, GrLinkedin } from 'react-icons/gr'
 import { useRouter } from 'next/router'
 import NavLink from './NavLink'
 
-function Footer () {
+function Footer ({ setCrossButton }) {
   const router = useRouter()
   return (
     <footer className={`${router.pathname.includes('/blog') ? 'h-[150px]' : 'h-[500px]'} bg-primary flex flex-col items-center justify-evenly ls:flex-row ls:h-[100px] ls:justify-around`}>
       <Link href='/'><a><h1 className='text-white'>Alessio Muganni</h1></a></Link>
       <nav className='w-[60%] h-[30%] ls:w-[25%]'>
         <ul className='text-white flex flex-col items-center justify-between h-full ls:flex-row'>
-          <NavLink section='home' nameLink='Home' />
-          <NavLink section='about' nameLink='About' offset={-75} />
-          <NavLink section='contact' nameLink='Contact' offset={-75} />
+          <NavLink section='home' nameLink='Home' setCrossButton={setCrossButton} />
+          <NavLink section='about' nameLink='About' offset={-75} setCrossButton={setCrossButton} />
+          <NavLink section='contact' nameLink='Contact' offset={-75} setCrossButton={setCrossButton} />
           <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><Link href='/blog'>Blog</Link>
           </li>
         </ul>

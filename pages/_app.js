@@ -10,7 +10,7 @@ function MyApp ({ Component, pageProps }) {
     <>
       <Nav setCrossButton={setCrossButton} crossButton={crossButton} />
       <Component {...pageProps} />
-      <Footer />
+      <Footer setCrossButton={setCrossButton} crossButton={crossButton} />
     </>
   )
 }
