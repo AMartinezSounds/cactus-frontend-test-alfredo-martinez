@@ -18,7 +18,7 @@
 }
 
 .smallSeparator {
-  @apply bg-terciary h-px w-[25%] ml-8 mr-auto md:hidden;
+  @apply bg-terciary h-px w-[25%] mb-[125px] ml-8 mr-auto md:hidden;
 }
 
 .largeSeparator {

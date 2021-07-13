@@ -5,7 +5,7 @@ function AboutPhone ({ sectionTitle, description }) {
   return (
     <div className='h-[880px] flex flex-col justify-between md:hidden'>
       <div
-        className='bg-center bg-cover ls:block h-[30vh]'
+        className='bg-top bg-cover ls:block h-[35vh]'
         style={{ backgroundImage: 'url(/alessioPhone.jpg)' }}
       />
       <div className='h-[400px] flex flex-col justify-between sm:justify-around'>
