@@ -49,6 +49,9 @@ module.exports = {
       },
       fontSize: {
         sectionTitle: '2.6rem'
+      },
+      transitionProperty: {
+        top: 'top'
       }
     }
   },

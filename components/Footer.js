@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link as LinkScroll } from 'react-scroll'
 import Link from 'next/link'
 import { GrFacebook, GrInstagram, GrLinkedin } from 'react-icons/gr'
 import { useRouter } from 'next/router'
+import NavLink from './NavLink'
+
 function Footer () {
   const router = useRouter()
   return (
@@ -10,9 +11,9 @@ function Footer () {
       <Link href='/'><a><h1 className='text-white'>Alessio Muganni</h1></a></Link>
       <nav className='w-[60%] h-[30%] ls:w-[25%]'>
         <ul className='text-white flex flex-col items-center justify-between h-full ls:flex-row'>
-          <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='home' smooth duration={750}>Home</LinkScroll></li>
-          <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='about' smooth duration={750} offset={-75}>About</LinkScroll></li>
-          <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='contact' smooth duration={750} offset={-75}>Contact</LinkScroll></li>
+          <NavLink section='home' nameLink='Home' />
+          <NavLink section='about' nameLink='About' offset={-75} />
+          <NavLink section='contact' nameLink='Contact' offset={-75} />
           <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><Link href='/blog'>Blog</Link>
           </li>
         </ul>

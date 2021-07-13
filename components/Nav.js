@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link as LinkScroll } from 'react-scroll'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { FaTimes } from 'react-icons/fa'
 import MobileNav from './MobileNav'
-
+import NavLink from './NavLink'
 function Nav ({ crossButton, setCrossButton }) {
   const router = useRouter()
   return (
@@ -14,9 +13,9 @@ function Nav ({ crossButton, setCrossButton }) {
         <Link href='/' onClick={() => setCrossButton('false')}><a><h1 className={router.pathname.includes('/blog') ? 'text-4xl' : ''}>Alessio Muganni</h1></a></Link>
         {crossButton === 'false'
           ? <ul className='hidden sm2:flex justify-between w-5/12 md:w-5/12'>
-            <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='home' smooth duration={750}>Home</LinkScroll></li>
-            <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='about' smooth duration={750} offset={-75}>About</LinkScroll></li>
-            <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><LinkScroll to='contact' smooth duration={750} offset={-75}>Contact</LinkScroll></li>
+            <NavLink section='home' nameLink='Home' />
+            <NavLink section='about' nameLink='About' offset={-75} />
+            <NavLink section='contact' nameLink='Contact' offset={-75} />
             <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><Link href='/blog'>Blog</Link></li>
             {/* eslint-disable-next-line */}
             </ul>

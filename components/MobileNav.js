@@ -1,29 +1,17 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { Link as LinkScroll } from 'react-scroll'
 import Link from 'next/link'
+import NavLink from './NavLink'
 
 function MobileNav ({ setCrossButton, crossButton }) {
   const router = useRouter()
   return (
-    <nav className={`mobileNavOff ${crossButton === 'false' ? 'top-[0px]' : 'top-[95px]'} ${router.pathname.includes('/blog') ? 'hidden' : ''}`}>
-      <ul className='h-full flex flex-col justify-evenly'>
-        <li className='text-center text-xl'>
-          <LinkScroll to='home' smooth duration={750} onClick={() => setCrossButton('false')}>
-            Home
-          </LinkScroll>
-        </li>
-        <li className='text-center text-xl'>
-          <LinkScroll to='about' smooth duration={750} onClick={() => setCrossButton('false')}>
-            About
-          </LinkScroll>
-        </li>
-        <li className='text-center text-xl'>
-          <LinkScroll to='contact' smooth duration={750} onClick={() => setCrossButton('false')}>
-            Contact
-          </LinkScroll>
-        </li>
-        <li className='text-center text-xl'>
+    <nav className={`mobileNavOff ${crossButton === 'false' ? '' : 'transition-[top] duration-300 ease-linear top-[96px]'} ${router.pathname.includes('/blog') ? 'hidden' : ''}`}>
+      <ul className='h-full flex flex-col justify-evenly items-center text-xl'>
+        <NavLink section='home' nameLink='Home' offset={-75} setCrossButton={setCrossButton} />
+        <NavLink section='about' nameLink='About' offset={-75} setCrossButton={setCrossButton} />
+        <NavLink section='contact' nameLink='Contact' offset={-75} setCrossButton={setCrossButton} />
+        <li>
           <Link href='/blog' onClick={() => setCrossButton('false')}>
             <a>
               Blog
