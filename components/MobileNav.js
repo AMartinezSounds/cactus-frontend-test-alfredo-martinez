@@ -11,7 +11,7 @@ function MobileNav ({ setCrossButton, crossButton }) {
         <NavLink section='home' nameLink='Home' offset={-75} setCrossButton={setCrossButton} />
         <NavLink section='about' nameLink='About' offset={-75} setCrossButton={setCrossButton} />
         <NavLink section='contact' nameLink='Contact' offset={-75} setCrossButton={setCrossButton} />
-        <li>
+        <li className='btnBlog'>
           <Link href='/blog' onClick={() => setCrossButton('false')}>
             <a>
               Blog

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function AboutTablet ({ sectionTitle, description }) {
   return (
-    <div className='phone:hidden md:flex w-[87%] mx-auto flex-col justify-between h-[788px] ls:hidden'>
+    <div className='phone:hidden md:flex w-[87%] mx-auto flex-col justify-between h-[921px] ls:hidden'>
       <div
         className='bg-center bg-cover ls:block h-[50vh]'
         style={{ backgroundImage: 'url(/alessio.jpg)' }}

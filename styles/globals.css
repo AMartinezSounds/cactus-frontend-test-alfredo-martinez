@@ -13,8 +13,12 @@
   @apply hover:bg-secondary active:bg-terciary transition duration-300 ease-in-out;
 }
 
+.btnBlog {
+  @apply bg-primary text-white px-8 py-4;
+}
+
 .mobileNavOff {
-  @apply absolute right-[0] left-[80px] z-10 h-[381px] bg-white;
+  @apply absolute right-[0] -mt-px left-[80px] z-10 h-[410px] bg-white;
 }
 
 .smallLine {
