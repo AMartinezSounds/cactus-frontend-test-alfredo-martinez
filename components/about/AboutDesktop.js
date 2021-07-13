@@ -16,7 +16,7 @@ function AboutDesktop ({ sectionTitle, description }) {
         <p className='w-[90%] tracking-[0.03rem]'>{description}</p>
         <div className='py-[25px]'>
           <Link href='/'>
-            <a className='btn hover:bg-secondary active:bg-terciary transition duration-300 ease-in-out'>View my portfolio</a>
+            <a className='btn btnAnimation'>View my portfolio</a>
           </Link>
         </div>
       </div>

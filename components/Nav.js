@@ -13,11 +13,11 @@ function Nav ({ crossButton, setCrossButton }) {
       <div className={`${router.pathname.includes('/blog') ? 'phone:flex-col justify-center' : ''} w-[90%] mx-auto flex justify-between items-center md:w-[77.39%] ls:w-11/12`}>
         <Link href='/' onClick={() => setCrossButton('false')}><a><h1 className={router.pathname.includes('/blog') ? 'text-4xl' : ''}>Alessio Muganni</h1></a></Link>
         {crossButton === 'false'
-          ? <ul className='hidden sm2:flex justify-between w-5/12 md:w-5/12'>
+          ? <ul className='hidden sm2:flex justify-between w-5/12 md:w-5/12 items-center'>
             <NavLink section='home' nameLink='Home' />
             <NavLink section='about' nameLink='About' offset={-75} setCrossButton={setCrossButton} />
             <NavLink section='contact' nameLink='Contact' offset={-75} setCrossButton={setCrossButton} />
-            <li className={router.pathname.includes('/blog') ? 'hidden' : ''}><Link href='/blog'>Blog</Link></li>
+            <li className={`bg-primary text-white px-8 py-4 btnAnimation ${router.pathname.includes('/blog') ? 'hidden' : ''}`}><Link href='/blog'>Blog</Link></li>
             {/* eslint-disable-next-line */}
             </ul>
           : <MobileNav setCrossButton={setCrossButton} crossButton={crossButton} className={router.pathname.includes('/blog') ? 'hidden' : ''} />}

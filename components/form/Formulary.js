@@ -44,7 +44,7 @@ function Formulary () {
               <ErrorMessage name='terms' component='div' className='errorMessage' />
             </div>
             <div className='flex items-center'>
-              <button type='submit' className='btn mx-auto hover:bg-secondary active:bg-terciary transition duration-300 ease-in-out'>Send message</button>
+              <button type='submit' className='btn btnAnimation mx-auto'>Send message</button>
             </div>
           </Form>
         </div>
